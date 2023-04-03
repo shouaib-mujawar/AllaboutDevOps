@@ -1,0 +1,6 @@
+crontab -e ############## it is used to execute a script every time of the day
+* * * * * bash /home/ubuntu/test.sh --every minute
+@daily bash /home/ubuntu/test.sh
+@hourly
+@monthly
+@yearly
