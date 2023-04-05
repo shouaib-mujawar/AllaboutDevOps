@@ -16,3 +16,14 @@ $ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
+
+cd /home/ubuntu/django-todo --- this will require permission of the file 
+so do chmod 777 django-todo and chmod 755 ubuntu
+
+Authentication error in jenkins on using sudo
+sudo su    
+visudo -f /etc/sudoers
+
+add following line at the end.
+
+jenkins ALL= NOPASSWD: ALL
