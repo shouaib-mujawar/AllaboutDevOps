@@ -24,6 +24,7 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 sudo usermod -aG docker $USER  //////////no need to use sudo docker ps or sudo b4 docker after this while executing this in shell
+ sudo chmod 666 /var/run/docker.sock
 
 cd /home/ubuntu/django-todo --- this will require permission of the file 
 so do chmod 777 django-todo and chmod 755 ubuntu
